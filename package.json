@@ -1,0 +1,24 @@
+{
+  "name": "elite-fusion-landing",
+  "version": "1.0.0",
+  "description": "ELITE FUSION - High-Converting SaaS Landing Page",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^3.0.0",
+    "framer-motion": "^10.0.0",
+    "react-icons": "^4.0.0",
+    "stripe": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0"
+  }
+}
