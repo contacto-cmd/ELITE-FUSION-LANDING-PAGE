@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
-import { ChevronDown, Check, Zap, BarChart3, Lock, Headphones, Github, Twitter, Linkedin } from 'react-feather';
-import Link from 'next/link';
+import {
+  FiBarChart,
+  FiCheck,
+  FiChevronDown,
+  FiGithub,
+  FiHeadphones,
+  FiLinkedin,
+  FiLock,
+  FiTwitter,
+  FiZap,
+} from 'react-icons/fi';
 
 const LandingPage = () => {
   const [email, setEmail] = useState('');
@@ -78,7 +87,7 @@ const LandingPage = () => {
 
           {/* Scroll Indicator */}
           <div className="mt-16 animate-bounce">
-            <ChevronDown size={32} className="mx-auto text-emerald-500" />
+            <FiChevronDown size={32} className="mx-auto text-emerald-500" />
           </div>
         </div>
       </section>
@@ -109,22 +118,22 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                icon: <Zap size={32} className="text-emerald-400" />,
+                icon: <FiZap size={32} className="text-emerald-400" />,
                 title: "Lightning Fast",
                 desc: "Process 1,000+ jobs per second with sub-2ms latency"
               },
               {
-                icon: <BarChart3 size={32} className="text-emerald-400" />,
+                icon: <FiBarChart size={32} className="text-emerald-400" />,
                 title: "Real-Time Analytics",
                 desc: "Track revenue, customer metrics, and performance live"
               },
               {
-                icon: <Lock size={32} className="text-emerald-400" />,
+                icon: <FiLock size={32} className="text-emerald-400" />,
                 title: "Enterprise Security",
                 desc: "99.99% SLA, encryption, and compliance ready"
               },
               {
-                icon: <Headphones size={32} className="text-emerald-400" />,
+                icon: <FiHeadphones size={32} className="text-emerald-400" />,
                 title: "24/7 Support",
                 desc: "Expert support team ready to help you scale"
               }
@@ -205,7 +214,7 @@ const LandingPage = () => {
                 <ul className="space-y-4">
                   {plan.features.map((feature, j) => (
                     <li key={j} className="flex gap-3">
-                      <Check size={20} className="text-emerald-400 flex-shrink-0" />
+                      <FiCheck size={20} className="text-emerald-400 flex-shrink-0" />
                       <span className="text-gray-300">{feature}</span>
                     </li>
                   ))}
@@ -361,9 +370,9 @@ const LandingPage = () => {
           <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm">© 2026 ELITE FUSION. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-emerald-400"><Github size={20} /></a>
-              <a href="#" className="text-gray-400 hover:text-emerald-400"><Twitter size={20} /></a>
-              <a href="#" className="text-gray-400 hover:text-emerald-400"><Linkedin size={20} /></a>
+              <a href="#" className="text-gray-400 hover:text-emerald-400"><FiGithub size={20} /></a>
+              <a href="#" className="text-gray-400 hover:text-emerald-400"><FiTwitter size={20} /></a>
+              <a href="#" className="text-gray-400 hover:text-emerald-400"><FiLinkedin size={20} /></a>
             </div>
           </div>
         </div>
